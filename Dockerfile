@@ -6,4 +6,5 @@ ENV USER ${USER}
 # Install apt utils
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 VOLUME /host
+ENTRYPOINT bash
 
