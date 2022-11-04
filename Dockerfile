@@ -28,7 +28,6 @@ RUN apt install -y locate
 RUN apt install -y iputils-ping
 RUN apt install -y axel
 VOLUME /host
-CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
 
 # Update the locatedb
 RUN updatedb
