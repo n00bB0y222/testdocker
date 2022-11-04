@@ -27,7 +27,6 @@ RUN apt install -y vim
 RUN apt install -y locate
 RUN apt install -y iputils-ping
 RUN apt install -y axel
-VOLUME /host
 
 # Update the locatedb
 RUN updatedb
